@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8930739cd67d646d89bbf187cb3e5bbc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player: {fileID: 3322504324634095629, guid: 932c0faf220f941d692c1073b177cb23, type: 3}
+  - exitBackgroundImageCanvasGroup: {instanceID: 0}
+  - caughtBackgroundImageCanvasGroup: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
