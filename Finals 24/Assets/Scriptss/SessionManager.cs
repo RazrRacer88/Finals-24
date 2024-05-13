@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SessiionManager : MonoBehaviour
+public class SessionManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
