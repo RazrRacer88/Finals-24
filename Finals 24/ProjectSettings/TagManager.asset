@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Start
   - Finsish
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

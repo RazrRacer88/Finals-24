@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
     supportShadowMask: 1
-    supportSSR: 0
+    supportSSR: 1
     supportSSRTransparent: 0
     supportSSAO: 1
-    supportSSGI: 0
+    supportSSGI: 1
     supportSubsurfaceScattering: 1
     sssSampleBudget:
       m_Values: 140000002800000050000000
       m_SchemaId:
         m_Id: With3Levels
     supportVolumetrics: 1
-    supportVolumetricClouds: 0
-    supportLightLayers: 0
+    supportVolumetricClouds: 1
+    supportLightLayers: 1
     supportWater: 1
     waterSimulationResolution: 128
     waterCPUSimulation: 1
@@ -33,37 +33,37 @@ MonoBehaviour:
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
     supportTransparentDepthPostpass: 1
-    colorBufferFormat: 74
+    colorBufferFormat: 48
     supportCustomPass: 1
-    customBufferFormat: 8
-    supportedLitShaderMode: 2
+    customBufferFormat: 48
+    supportedLitShaderMode: 3
     planarReflectionResolution:
-      m_Values: 000100000004000000080000
+      m_Values: 001000000010000000100000
       m_SchemaId:
         m_Id: With3Levels
     cubeReflectionResolution:
-      m_Values: 800000000001000000020000
+      m_Values: 001000000010000000100000
       m_SchemaId:
         m_Id: With3Levels
     supportDecals: 1
-    supportDecalLayers: 0
+    supportDecalLayers: 1
     supportSurfaceGradient: 1
-    decalNormalBufferHP: 0
+    decalNormalBufferHP: 1
     msaaSampleCount: 1
     supportMotionVectors: 1
     supportDataDrivenLensFlare: 1
-    supportRuntimeAOVAPI: 0
+    supportRuntimeAOVAPI: 1
     supportDitheringCrossFade: 1
-    supportTerrainHole: 0
+    supportTerrainHole: 1
     lightProbeSystem: 0
     probeVolumeMemoryBudget: 1024
     probeVolumeBlendingMemoryBudget: 128
     supportProbeVolumeStreaming: 0
     probeVolumeSHBands: 1
-    supportRayTracing: 0
-    supportedRayTracingMode: 3
+    supportRayTracing: 1
+    supportedRayTracingMode: 2
     lightLoopSettings:
-      cookieAtlasSize: 2048
+      cookieAtlasSize: 16384
       cookieFormat: 74
       cookieAtlasLastValidMip: 0
       cookieTexArraySize: 1
@@ -77,11 +77,11 @@ MonoBehaviour:
       reflectionProbeTexLastValidCubeMip: 3
       reflectionProbeTexLastValidPlanarMip: 0
       reflectionProbeDecreaseResToFit: 1
-      skyReflectionSize: 256
+      skyReflectionSize: 4096
       skyLightingOverrideLayerMask:
         serializedVersion: 2
         m_Bits: 0
-      supportFabricConvolution: 0
+      supportFabricConvolution: 1
       maxDirectionalLightsOnScreen: 16
       maxPunctualLightsOnScreen: 512
       maxAreaLightsOnScreen: 64
@@ -106,7 +106,7 @@ MonoBehaviour:
         useDynamicViewportRescale: 1
       cachedPunctualLightShadowAtlas: 2048
       cachedAreaLightShadowAtlas: 1024
-      allowDirectionalMixedCachedShadows: 0
+      allowDirectionalMixedCachedShadows: 1
       shadowResolutionDirectional:
         m_Values: 00010000000200000004000000080000
         m_SchemaId:
@@ -122,20 +122,20 @@ MonoBehaviour:
       maxDirectionalShadowMapResolution: 2048
       maxPunctualShadowMapResolution: 2048
       maxAreaShadowMapResolution: 2048
-      supportScreenSpaceShadows: 0
+      supportScreenSpaceShadows: 1
       maxScreenSpaceShadowSlots: 4
       screenSpaceShadowBufferFormat: 48
     decalSettings:
       drawDistance: 1000
       atlasWidth: 4096
       atlasHeight: 4096
-      perChannelMask: 0
+      perChannelMask: 1
     postProcessSettings:
       m_LutSize: 32
       lutFormat: 48
       bufferFormat: 74
     dynamicResolutionSettings:
-      enabled: 0
+      enabled: 1
       useMipBias: 0
       enableDLSS: 0
       DLSSPerfQualitySetting: 0
@@ -159,8 +159,8 @@ MonoBehaviour:
     xrSettings:
       singlePass: 1
       occlusionMesh: 1
-      cameraJitter: 0
-      allowMotionBlur: 0
+      cameraJitter: 1
+      allowMotionBlur: 1
     postProcessQualitySettings:
       NearBlurSampleCount: 030000000500000008000000
       NearBlurMaxRadius:
@@ -174,7 +174,7 @@ MonoBehaviour:
       - 13
       DoFResolution: 040000000200000001000000
       DoFHighQualityFiltering: 000101
-      DoFPhysicallyBased: 000000
+      DoFPhysicallyBased: 000001
       LimitManualRangeNearBlur: 000000
       MotionBlurSampleCount: 04000000080000000c000000
       BloomRes: 040000000200000002000000
@@ -187,14 +187,14 @@ MonoBehaviour:
         m_SchemaId:
           m_Id: With3Levels
     maximumLODLevel:
-      m_Values: 000000000000000000000000
+      m_Values: 070000000700000007000000
       m_SchemaId:
         m_Id: With3Levels
     lodBias:
       m_Values:
-      - 1
-      - 1
-      - 1
+      - 7
+      - 7
+      - 7
       m_SchemaId:
         m_Id: With3Levels
     lightingQualitySettings:
@@ -260,7 +260,7 @@ MonoBehaviour:
       RTRRayMaxIterations: 200000003000000040000000
       RTRDenoise: 010101
       RTRDenoiserRadius: 080000000c00000010000000
-      RTRSmoothDenoising: 010000
+      RTRSmoothDenoising: 010001
       Fog_ControlMode: 000000000000000000000000
       Fog_Budget:
       - 0.166
