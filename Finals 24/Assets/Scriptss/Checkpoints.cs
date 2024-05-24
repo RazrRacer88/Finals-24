@@ -43,6 +43,12 @@ public class Checkpoints : MonoBehaviour
                 _lapsCompleted+= 1;
                 UpdateLapsCompletedText(_lapsCompleted, _totalLaps);
                 TurnOnCheckpoints();
+
+                if(_lapsCompleted >= _totalLaps)
+                {
+                GameManager.Instance.CompletedLevel(SceneManager.GetActiveScene().name);
+                StartCoroutine("GotoLevelSelect");
+                }
             }
             else
             {
@@ -69,5 +75,11 @@ public class Checkpoints : MonoBehaviour
             _checkpoints[i].gameObject.GetComponent<BoxCollider>().enabled = true;
         }
         _checkpoints.Clear();
+    }
+
+    IEnumerator GotoLevelSelect()
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("Level select");
     }
 }
